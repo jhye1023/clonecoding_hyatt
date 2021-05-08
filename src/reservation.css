@@ -1,0 +1,72 @@
+:root {
+  --color-black-header: #282828;
+  --color-white: white;
+  --color-gray: #B6B6B6;
+  --color-blue: #0172CD;
+  --color-black: #393939;
+
+  --font-small: 12px;
+  --padding-header: 50px;
+  --height-header: 95px;
+  --height-logo:70px;
+}
+
+.res-box {
+  display: flex;
+  justify-content:space-between;
+  margin:auto;
+  width: 900px;
+  /* position: fixed; */
+}
+
+.reservation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  height: 80px;
+ 
+}
+
+.searchbox {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  margin-right: 10px;
+  border: solid 1px;
+}
+
+.fa-search {
+  padding-left: 5px;
+  color:var(--color-black);
+}
+
+#inquire {
+  width: 300px;
+  height: 40px;
+  margin-right: 8px;
+  font-size: 15px;
+  border: none;
+}
+
+#inquire:focus {
+  outline: none;
+}
+
+.date {
+  height: 40px;
+  margin-right: 8px;
+}
+
+.findBtn {
+  width: 250px;
+  height: 45px;
+  background-color: #f8af06;
+  border-style: none;
+  font-size: 15px;
+  outline: none;
+}
+
+.findBtn:hover {
+  background-color:#e9a403;
+}
