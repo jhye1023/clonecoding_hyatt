@@ -10,7 +10,7 @@
     </title>
     <script src="./src/main.js" defer></script>
     <script src="./src/slider.js" defer></script>
-    <script src="./src/dropdown.js" defer></script>
+    <script src="./src/dropdownlist.js" defer></script>
     <link rel="stylesheet" href="./src/header.css" />
     <link rel="stylesheet" href="./src/reservation.css" />
     <link rel="stylesheet" href="./src/mainbox.css" />
@@ -62,9 +62,18 @@
       </div>
       <div class="header">
         <div class="header-left">
-          <div class="font">
+          <button class="font">
             <i class="fas fa-bars"></i>
                 <i class="fas fa-caret-down"></i>
+            </button>
+            <div class="barlist">
+                <ul class="bar-dropdown">
+                    <li>Offers</li><hr>
+                    <li>Hotels & Resorts</li><hr>
+                    <li>My Reservations</li><hr>
+                    <li>Meetings & Events</li><hr>
+                    <li>About Us</li><hr>
+                </ul>
             </div>
             <a href=""><img src="./img/Hyatt_logo.jpeg" class="logo" alt="logo" /></a>
         </div>
@@ -76,13 +85,13 @@
               ><i class="fas fa-caret-down"></i>
             </button>
             <div class="dropdownlist">
-                <!-- <ul class="language-dropdown">
+                <ul class="language-dropdown">
                     <li>English</li><hr>
                     <li>Korean</li><hr>
                     <li>Deutsch</li><hr>
                     <li>Espanol</li><hr>
                     <li>Francais</li><hr>
-                </ul> -->
+                </ul>
             </div>
         </div>
       
@@ -94,8 +103,8 @@
               <i class="fas fa-user"></i><span id="text">SIGN IN</span
               ><i class="fas fa-caret-down"></i>
             </button>
-            <div class="dropdownlist login">
-                <!-- <div class="signin-header">
+            <div class="dropdownlistlogin">
+                <div class="signin-header">
                     <small>SING IN TO</small><br>
                     <b>WORLD OF HYATT</b><hr>
                 </div>
@@ -109,7 +118,7 @@
                     <li>Members Benefits</li><hr>
                     <li>Rewards</li><hr>              
                 </ul>
-            </div> -->
+            </div>
             </div>
         </div>
           </div>

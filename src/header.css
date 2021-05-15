@@ -136,13 +136,25 @@ a {
   font-size: 10px;
   outline: none;
 }
-.dropdownlist {
+.dropdownlist, .dropdownlistlogin{
   background-color: white;
   position: absolute;
   width: 160px;
   font-size: 20px;
   z-index: 2;
 }
+.bar-dropdown{
+  background-color: white;
+  position: absolute;
+  width: 160px;
+  font-size: 18px;
+  z-index: 2;
+  padding-top: 10px;
+}
+.dropdownlist, .dropdownlistlogin, .barlist{
+  display: none;
+}
+
 hr {
   width: 140px;
 }
@@ -225,6 +237,12 @@ hr {
   }
   .font {
     visibility: visible;
+    border: none;
+    background-color: var(--color-black-header);
+    color: var(--color-gray)
+  }
+  .font:focus {
+    outline: none;
   }
   .row-b {
     display: none;
@@ -233,6 +251,13 @@ hr {
   .findBtn {
     display: none;
   }
+  .dropdownlistlogin {
+    right: 5px;
+  }
+  .bar-dropdown {
+    left: 50px;
+  }
+
 }
 
 @media screen and (max-width: 660px) {
@@ -266,5 +291,8 @@ hr {
   .fa-globe,
   .fa-user {
     padding-right: 0px;
+  }
+  .bar-dropdown {
+    left: 3px;
   }
 }
